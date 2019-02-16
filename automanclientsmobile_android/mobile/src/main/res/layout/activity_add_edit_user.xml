@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="automan.automanclientsmobile_android.VIEW.ADDEDIT_VIEWS.AddEditUser">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/context"
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Username"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter First Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Last Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/othernames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Other Names"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Details"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/genderview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Gender"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/repass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Age"
+                android:inputType="number" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Phone Number"
+                android:inputType="phone" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/haddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Home Address"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/paddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Postal Address"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/cmethview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Preferred Contact Method"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/cmeth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/savebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

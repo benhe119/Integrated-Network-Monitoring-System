@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="automan.automanclientsmobile_android">
+
+    <!-- Required to act as a custom watch face. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Required for complications to receive complication data and open the provider chooser. -->
+    <uses-permission android:name="com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA" />
+
+    <application
+        android:name=".AutomanApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".VIEW.HOME_VIEWS.Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VIEW.STARTUP_VIEWS.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VIEW.STARTUP_VIEWS.Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VIEW.SETTINGS_VIEWS.UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VIEW.ADDEDIT_VIEWS.AddEditUser" />
+        <activity android:name=".VIEW.ADDEDIT_VIEWS.AddEditAutoLog" />
+        <activity android:name=".VIEW.ADDEDIT_VIEWS.AddEditAutoEvent" />
+        <activity android:name=".VIEW.DETAILS_VIEWS.UserDetails" />
+        <activity android:name=".VIEW.DETAILS_VIEWS.AutoLogDetails" />
+        <activity android:name=".VIEW.DETAILS_VIEWS.AutoEventDetails" />
+        <activity android:name=".VIEW.DETAILS_VIEWS.StockDetails" />
+        <activity android:name=".VIEW.ADDEDIT_VIEWS.AddEditStock"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profilenav"
+        android:icon="@drawable/ic_profile"
+        android:title="View Profile" />
+    <item android:title="My Stuff">
+        <group android:checkableBehavior="single">
+            <!-- THESE GROUP ITEMS SHOULD BE SET BASED ON USER TYPE -->
+            <item
+                android:id="@+id/autolognav"
+                android:title="Logs" />
+            <item
+                android:id="@+id/autoeventnav"
+                android:title="Events" />
+            <item
+                android:id="@+id/usernav"
+                android:title="Users" />
+            <item
+                android:id="@+id/stocknav"
+                android:title="Stocks" />
+        </group>
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+
+</menu>

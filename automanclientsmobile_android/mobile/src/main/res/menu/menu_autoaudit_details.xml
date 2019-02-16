@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="automan.automanclientsmobile_android.VIEW.DETAILS_VIEWS.AutoLogDetails">
+    <item
+        android:id="@+id/edit"
+        android:orderInCategory="100"
+        android:title="Edit"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="Delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/showAutoLogOrAutoEventData"
+        android:orderInCategory="100"
+        android:title="Show Data" />
+    <item
+        android:id="@+id/handle"
+        android:orderInCategory="100"
+        android:title="Handle" />
+</menu>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="automan.automanclientsmobile_android.VIEW.ADDEDIT_VIEWS.AddEditAutoEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/context"
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Details"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:paddingTop="10dp"
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Data (JSON Format)"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/typeview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Type"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/sourceTypeview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Source Type"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/sourceType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/sourceview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Source"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/autoauditview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Audit"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/autoaudit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/autoeventview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Event"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/autoevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/emergencyLvlview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Emergency Level"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/emergencyLvl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/autologsview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Select Log(s)"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:paddingTop="10dp"
+                android:id="@+id/autologs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/savebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

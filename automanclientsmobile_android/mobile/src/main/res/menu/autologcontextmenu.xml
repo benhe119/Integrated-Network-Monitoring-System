@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/autologview"
+        android:orderInCategory="100"
+        android:title="View Details" />
+    <item
+        android:id="@+id/editautolog"
+        android:orderInCategory="100"
+        android:title="Edit"
+        android:icon="@drawable/ic_edit"/>
+    <item
+        android:id="@+id/deleteautolog"
+        android:orderInCategory="100"
+        android:title="Delete"
+        android:icon="@drawable/ic_delete"/>
+    <item
+        android:id="@+id/handleautolog"
+        android:orderInCategory="100"
+        android:title="Handle Log"/>
+</menu>
